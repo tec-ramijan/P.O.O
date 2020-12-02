@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="panel" maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <Button fx:id="arriba" layoutX="248.0" layoutY="334.0" mnemonicParsing="false" onAction="#moverArriba" prefHeight="26.0" prefWidth="90.0" text="ARRIBA" />
+      <Button fx:id="abajo" layoutX="248.0" layoutY="360.0" mnemonicParsing="false" onAction="#moverAbajo" prefHeight="26.0" prefWidth="90.0" text="ABAJO" />
+      <Button fx:id="derecha" layoutX="338.0" layoutY="345.0" mnemonicParsing="false" onAction="#moverDerecha" prefHeight="30.0" prefWidth="90.0" text="DERECHA" />
+      <Button fx:id="izquierda" layoutX="157.0" layoutY="347.0" mnemonicParsing="false" onAction="#moverIzquierda" text="IZQUIERDA" />
+      <ImageView fx:id="barco" fitHeight="98.0" fitWidth="131.0" layoutX="232.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/barco.png" />
+         </image>
+      </ImageView>
+   </children>
+   <stylesheets>
+      <URL value="@../resources/estilos.css" />
+   </stylesheets>
+</Pane>
